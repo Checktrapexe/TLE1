@@ -1,0 +1,156 @@
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #444449;
+    color: #899fae;
+}
+
+nav {
+    background-color: #313135;
+    color: #71abcc;
+
+    font-family: Linebeam;
+    padding: 1vw;
+    font-size: 2rem;
+    border-bottom: #71abcc 0.2vh solid;
+}
+
+.navTogether {
+    display: flex;
+    gap: 50vw;
+    justify-content: center;
+}
+
+nav a {
+    color: #71abcc;
+    font-family: Linebeam;
+
+    text-decoration: none;
+    padding: 0 1.2vw 0 1.2vw;
+}
+
+.navText {
+    justify-content: flex-end;
+    align-self: center;
+}
+
+#logo img {
+    width: 150px;
+    height: auto;
+    justify-content: flex-start;
+}
+
+
+footer {
+    background-color: #323232;
+    padding: 3vw;
+    display: flex;
+    gap: 45vw;
+    justify-content: center;
+}
+
+footer a {
+    color: #899fae;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 10px;
+    font-family: BlueScreen;
+}
+
+.socials a {
+    padding: 5px;
+    font-size: 2.5rem;
+}
+
+.socials {
+    justify-self: right;
+}
+
+header {
+    padding: 2vw;
+    padding-top: 5vw;
+    justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8vw;
+    font-size: 2rem;
+    font-family: Striker;
+}
+
+h1 {
+    font-family: Striker;
+
+    font-size: 2.5rem;
+}
+
+h2, h3 {
+    font-family: Striker;
+    font-size: 2.5rem;
+    justify-self: center;
+}
+
+.medipod {
+    width: 500px;
+    height: auto;
+}
+
+.indexHeader {
+    font-size: 6rem;
+    color: #73a1bd;
+}
+
+#together {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.benefitSection, .signupSection {
+    justify-self: center;
+    padding-top: 2.8vw;
+    padding-bottom: 2.2vw;
+}
+
+.formButtons {
+    padding: 10px;
+
+}
+
+.benefitSection p, .signupSection .formButtons button {
+    justify-self: center;
+    padding: 15px;
+    text-decoration: none;
+    font-family: Striker;
+    font-size: 2rem;
+
+}
+
+.formButtons button {
+    border-radius: 13%;
+    border: 2px solid #73a1bd;
+    background-color: #444449;
+    color: white;
+
+}
+
+main {
+    padding-bottom: 10vw;
+}
+
+
+@font-face {
+    font-family: BlueScreen;
+    src: url("https://file.garden/aCHSjVU4PCQNDvKI/Blue%20Screen%20Personal%20Use.ttf");
+}
+
+@font-face {
+    font-family: Linebeam;
+    src: url("https://file.garden/aCHSjVU4PCQNDvKI/Linebeam.ttf");
+}
+
+@font-face {
+    font-family: Striker;
+    src: url("https://file.garden/aCHSjVU4PCQNDvKI/Striker%20PersonalUseOnly.ttf");
+}
