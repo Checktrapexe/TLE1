@@ -1,5 +1,13 @@
 <?php
+session_start();
+require_once 'includes/connection.php';
 
+if (!$db) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+$sql = "SELECT * FROM items";
+$result = mysqli_query($db, $sql);
 ?>
 
 <!doctype html>
@@ -36,7 +44,21 @@
 
     <section class="benefitSection">
         <h2>some stuff idk</h2>
-        <p>more stuff</p>
+
+        <?php if ($result && mysqli_num_rows($result) > 0): ?>
+
+            <?php while ($item = mysqli_fetch_assoc($result)): ?>
+                <div class="item">
+                    <h3><?php echo htmlspecialchars($item["name"]); ?></h3>
+                    <p><?php echo htmlspecialchars($item["info"]); ?></p>
+                    <p>Cost: <?php echo htmlspecialchars($item["cost"]); ?></p>
+                </div>
+            <?php endwhile; ?>
+
+        <?php else: ?>
+            <p>No items found.</p>
+        <?php endif; ?>
+
     </section>
 
     <section class="signupSection">
