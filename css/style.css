@@ -89,7 +89,7 @@ h1 {
 h2, h3 {
     font-family: Striker;
     font-size: 2.5rem;
-    justify-self: center;
+    text-align: center;
 }
 
 .titleGenerate {
@@ -126,18 +126,21 @@ h2, h3 {
     padding-bottom: 2.2vw;
 }
 
-.formButtons {
-    padding: 10px;
 
+.formButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
 }
 
 .benefitSection p, .signupSection .formButtons button {
-    justify-self: center;
+    text-align: center;
     padding: 15px;
     text-decoration: none;
     font-family: Striker;
     font-size: 2rem;
-
+    width: auto;
 }
 
 .formButtons button {
