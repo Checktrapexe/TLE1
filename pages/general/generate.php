@@ -52,6 +52,9 @@ $result = mysqli_query($db, $sql);
                     <h3><?php echo htmlspecialchars($item["name"]); ?></h3>
                     <p><?php echo htmlspecialchars($item["info"]); ?></p>
                     <p>Cost: <?php echo htmlspecialchars($item["cost"]); ?></p>
+                    <button type="submit" name="print">
+                        Print
+                    </button>
                 </div>
             <?php endwhile; ?>
 
