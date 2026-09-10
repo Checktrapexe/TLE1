@@ -6,7 +6,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 <div class="navTogether">
     <div id="logo">
-        <a href="index.php">
+        <a href="/index.php">
             <img src="media/placeholder.png"
                  alt="MediPod logo">
         </a>
