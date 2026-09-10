@@ -44,24 +44,24 @@ $result = mysqli_query($db, $sql);
 
     <section class="benefitSection">
         <h2>some stuff idk</h2>
+        <section class="itemlist">
+            <?php if ($result && mysqli_num_rows($result) > 0): ?>
 
-        <?php if ($result && mysqli_num_rows($result) > 0): ?>
+                <?php while ($item = mysqli_fetch_assoc($result)): ?>
+                    <div class="item">
+                        <h3><?php echo htmlspecialchars($item["name"]); ?></h3>
+                        <p><?php echo htmlspecialchars($item["info"]); ?></p>
+                        <p>Cost: <?php echo htmlspecialchars($item["cost"]); ?></p>
+                        <button type="submit" name="print">
+                            Print
+                        </button>
+                    </div>
+                <?php endwhile; ?>
 
-            <?php while ($item = mysqli_fetch_assoc($result)): ?>
-                <div class="item">
-                    <h3><?php echo htmlspecialchars($item["name"]); ?></h3>
-                    <p><?php echo htmlspecialchars($item["info"]); ?></p>
-                    <p>Cost: <?php echo htmlspecialchars($item["cost"]); ?></p>
-                    <button type="submit" name="print">
-                        Print
-                    </button>
-                </div>
-            <?php endwhile; ?>
-
-        <?php else: ?>
-            <p>No items found.</p>
-        <?php endif; ?>
-
+            <?php else: ?>
+                <p>No items found.</p>
+            <?php endif; ?>
+        </section>
     </section>
 
 
