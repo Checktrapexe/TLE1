@@ -52,9 +52,12 @@ $result = mysqli_query($db, $sql);
                         <h3><?php echo htmlspecialchars($item["name"]); ?></h3>
                         <p><?php echo htmlspecialchars($item["info"]); ?></p>
                         <p>Cost: <?php echo htmlspecialchars($item["cost"]); ?></p>
-                        <button type="submit" name="print">
-                            Print
-                        </button>
+                        <form method="get" action="/pages/general/loading.php">
+                            <input type="hidden" name="item_id" value="<?php echo htmlspecialchars($item["id"]); ?>">
+                            <button type="submit" name="print">
+                                Print
+                            </button>
+                        </form>
                     </div>
                 <?php endwhile; ?>
 
