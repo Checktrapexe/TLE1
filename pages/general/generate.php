@@ -31,19 +31,8 @@ $result = mysqli_query($db, $sql);
 
 <main>
 
-    <header>
-
-        <img src="s" alt="Medipouch">
-
-        <section id="together">
-            <h1>Medipouch</h1>
-            <p>description</p>
-        </section>
-
-    </header>
-
     <section class="benefitSection">
-        <h2>some stuff idk</h2>
+        <h2 class="titleGenerate">generate an item</h2>
         <section class="itemlist">
             <?php if ($result && mysqli_num_rows($result) > 0): ?>
 

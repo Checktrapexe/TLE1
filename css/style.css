@@ -92,6 +92,19 @@ h2, h3 {
     justify-self: center;
 }
 
+.titleGenerate {
+    font-size: 2rem;
+    justify-self: center;
+}
+
+#together p {
+    width: 700px;
+}
+
+.benefitSection p {
+    width: 74vw;
+}
+
 .medipod {
     width: 500px;
     height: auto;
