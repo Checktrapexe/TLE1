@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
 
 <nav>
     <!-- imports the navigation component-->
-    <?php require_once '../../components/nav.php'; ?>
+    <?php require_once __DIR__ . '/../../components/nav.php'; ?>
 </nav>
 
 <?php if ($login) { ?>
@@ -168,7 +168,7 @@ if (isset($_POST['submit'])) {
 
 <footer>
     <!--imports the footer component-->
-    <?php require_once '../../components/footer.php'; ?>
+    <?php require_once __DIR__ . '/../../components/footer.php'; ?>
 </footer>
 
 </body>
