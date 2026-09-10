@@ -13,7 +13,7 @@ if (session_status() === PHP_SESSION_NONE) {
     </div>
 
     <div class="navText">
-        <a href="index.php">Information</a>
+        <a href="/index.php">Information</a>
 
         <?php if (isset($_SESSION['user_id'])) : ?>
 
