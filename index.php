@@ -46,7 +46,8 @@ if (isset($_SESSION['user_id'])) {
 
     <section class="benefitSection">
         <h2>Choose the Future</h2>
-        <p>MediPod is the future of the medical field: with constant support from financial backers and professionals
+        <p class="benefitP">MediPod is the future of the medical field: with constant support from financial backers and
+            professionals
             from the field we strive to improve your quality of life. Many functions with our specially designed MediPod
             can replace a trip to the doctor's, meaning more convenience for you.</p>
     </section>
