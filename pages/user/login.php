@@ -7,7 +7,7 @@ require_once '../../included/connection.php';
 $errors = [];
 $login = isset($_SESSION['user_id']);
 
-$redirect = $_GET['redirect'] ?? 'index.php';
+$redirect = $_GET['redirect'] ?? '/index.php';
 
 if (isset($_POST['submit'])) {
 
@@ -70,7 +70,7 @@ if (isset($_POST['submit'])) {
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>MediPod</title>
     <link rel="icon" type="image/x-icon" href="/media/favicon.gif">
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/2dba62d6df.js" crossorigin="anonymous"></script>
 </head>
 
@@ -84,7 +84,7 @@ if (isset($_POST['submit'])) {
 
 <?php if ($login) { ?>
     <p>You're already logged in!</p>
-    <p><a href="logout.php">Log out</a> / <a href="index.php">Back to home</a></p>
+    <p><a href="/pages/user/logout.php">Log out</a> / <a href="/index.php">Back to home</a></p>
 <?php } else { ?>
 
     <main>
@@ -153,7 +153,7 @@ if (isset($_POST['submit'])) {
                         </button>
 
                         <button>
-                            <a href="register.php">Register</a>
+                            <a href="/pages/user/register.php">Register</a>
                         </button>
                     </div>
 
