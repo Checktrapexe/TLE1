@@ -77,7 +77,7 @@ if (isset($_POST['submit'])) {
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>MediPod</title>
     <link rel="icon" type="image/x-icon" href="/media/favicon.gif">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <script src="https://kit.fontawesome.com/2dba62d6df.js" crossorigin="anonymous"></script>
 </head>
 
@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
 
 <nav>
     <!-- imports the navigation component-->
-    <?php require_once __DIR__ . '/../../components/nav.php'; ?>
+    <?php require_once '../../components/nav.php'; ?>
 </nav>
 
 <?php if ($login) { ?>
@@ -168,7 +168,7 @@ if (isset($_POST['submit'])) {
 
 <footer>
     <!--imports the footer component-->
-    <?php require_once __DIR__ . '/../../components/footer.php'; ?>
+    <?php require_once '../../components/footer.php'; ?>
 </footer>
 
 </body>

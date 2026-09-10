@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'includes/connection.php';
+require_once '../../included/connection.php';
 
 if (!$db) {
     die("Connection failed: " . mysqli_connect_error());
@@ -19,14 +19,14 @@ $result = mysqli_query($db, $sql);
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>MediPod</title>
     <link rel="icon" type="image/x-icon" href="/media/favicon.gif">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 
 <body>
 
 <nav>
     <!-- imports the navigation component-->
-    <?php require_once "components/nav.php"; ?>
+    <?php require_once "../../components/nav.php"; ?>
 </nav>
 
 <main>
@@ -61,19 +61,12 @@ $result = mysqli_query($db, $sql);
 
     </section>
 
-    <section class="signupSection">
-        <h3>Sign up now or log in</h3>
-        <div class="formButtons">
-            <button>Register</button>
-            <button>Log in</button>
-        </div>
-    </section>
 
 </main>
 
 <footer>
     <!--imports the footer component-->
-    <?php require_once "components/footer.php"; ?>
+    <?php require_once "../../components/footer.php"; ?>
 </footer>
 
 </body>

@@ -1,4 +1,7 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
 
 <div class="navTogether">
@@ -12,15 +15,17 @@
     <div class="navText">
         <a href="index.php">Information</a>
 
-        <!--        check if logged in? -->
+        <?php if (isset($_SESSION['user_id'])) : ?>
 
-        <!--        if not logged in -->
-        <a href="login.php">Login</a>
-        <a href="register.php">Register</a>
+            <a href="/pages/general/generate.php">Overview</a>
+            <a href="/pages/user/logout.php">Log out</a>
 
-        <!--        else -->
-        <!--        <a href="generate.php">Overview</a>-->
-        <!--        <a href="logout.php">Log out</a>-->
+        <?php else : ?>
+
+            <a href="/pages/user/login.php">Login</a>
+            <a href="/pages/user/register.php">Register</a>
+
+        <?php endif; ?>
 
     </div>
 </div>
