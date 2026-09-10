@@ -217,3 +217,97 @@ main {
     justify-content: center;
     padding: 2vw;
 }
+
+
+.loginSection {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    padding: 3vw;
+    gap: 1.5vw;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.loginSection h1 {
+    margin-bottom: 1vw;
+}
+
+.inputField {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5vw;
+    width: 100%;
+}
+
+.inputField label {
+    font-family: Striker;
+    font-size: 1.3rem;
+    color: #73a1bd;
+}
+
+.inputField > div > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.inputField input {
+    flex: 1;
+    padding: 10px 40px 10px 12px;
+    border: 2px solid #71abcc;
+    border-radius: 8px;
+    background-color: #313135;
+    color: #899fae;
+    font-size: 1rem;
+    font-family: BlueScreen;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.inputField input:focus {
+    outline: none;
+    border-color: #73a1bd;
+}
+
+.inputField .icon {
+    position: absolute;
+    right: 12px;
+    color: #71abcc;
+    pointer-events: none;
+}
+
+.inputField .warning {
+    color: #d9727d;
+    font-size: 0.9rem;
+    font-family: BlueScreen;
+    min-height: 1.2em;
+}
+
+.buttonsLogin {
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.buttonsLogin button {
+    border-radius: 13%;
+    border: 2px solid #73a1bd;
+    background-color: #444449;
+    color: white;
+    padding: 10px 20px;
+    font-family: Striker;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.buttonsLogin button:hover {
+    background-color: #73a1bd;
+    color: #444449;
+}
+
+.buttonsLogin button a {
+    color: inherit;
+    text-decoration: none;
+}
